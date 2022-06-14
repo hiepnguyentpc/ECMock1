@@ -23,7 +23,6 @@ export default function LogInScreen({ navigation }) {
         password: password,
       })
       .then((response) => {
-        alert("AUTHENTICATED!");
         navigation.navigate("Home Screen")
       })
       .catch((error) => {

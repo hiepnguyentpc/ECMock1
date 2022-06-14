@@ -1,15 +1,20 @@
-import React from 'react'
-import { View, StyleSheet, ListRenderItem } from 'react-native'
-import { Tabs } from 'react-native-collapsible-tab-view'
-import Header from './Components/Header/Header'
+import React from "react";
+import {
+  View,
+  StyleSheet,
+  ListRenderItem,
+  TouchableOpacity,
+} from "react-native";
+import { Tabs } from "react-native-collapsible-tab-view";
+import Header from "./Components/Header/Header";
+import TabViewA from "./Components/Tab View/Tab View A/TabViewA";
+import TabViewB from "./Components/Tab View/Tab View B/TabViewB";
+const HEADER_HEIGHT = 250;
+const HomeScreen = ({ navigation }) => {
 
-
-const HEADER_HEIGHT = 250
-
-
-
-const Example= () => {
-  
+  const buttonPressed=()=>{
+    navigation.navigate('Quiz Screen')
+  }
 
   return (
     <Tabs.Container
@@ -17,34 +22,30 @@ const Example= () => {
       headerHeight={HEADER_HEIGHT} // optional
     >
       <Tabs.Tab name="Computer Science">
-        <Tabs.FlatList/>
+        <Tabs.ScrollView>
+
+
+            <TabViewA buttonPressed = {buttonPressed}/>
+
+
+        </Tabs.ScrollView>
       </Tabs.Tab>
+
       <Tabs.Tab name="UI/ UX Design">
         <Tabs.ScrollView>
-          <View style={[styles.box, styles.boxA]} />
-          <View style={[styles.box, styles.boxB]} />
+          <TabViewB />
         </Tabs.ScrollView>
       </Tabs.Tab>
     </Tabs.Container>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-  box: {
-    height: 250,
-    width: '100%',
-  },
-  boxA: {
-    backgroundColor: 'white',
-  },
-  boxB: {
-    backgroundColor: '#D8D8D8',
-  },
   header: {
     height: HEADER_HEIGHT,
-    width: '100%',
-    backgroundColor: '#2196f3',
+    width: "100%",
+    backgroundColor: "#2196f3",
   },
-})
+});
 
-export default Example
+export default HomeScreen;
