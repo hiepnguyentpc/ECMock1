@@ -6,8 +6,11 @@ import DetailView from './Detail View/DetailView'
 import HeaderQuizDetail from './Header/Header'
 const HEADER_HEIGHT = 250
 
-const QuizDetailScreen = () => {
-  
+const QuizDetailScreen = ({navigation}) => {
+
+  const buttonPressed = () => {
+    navigation.navigate('Quiz Main')
+  };
 
   return (
     <Tabs.Container
@@ -17,7 +20,7 @@ const QuizDetailScreen = () => {
      
       <Tabs.Tab name="CS Foundation">
         <Tabs.ScrollView>
-          <DetailView/>
+          <DetailView buttonPress = {buttonPressed}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 

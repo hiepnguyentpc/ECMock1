@@ -3,7 +3,8 @@ import styles from "./styles";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { TouchableOpacity } from "react-native";
 
-const DetailView = () => {
+const DetailView = (props) => {
+    
   return (
     <View style={styles.container}>
       <View>
@@ -125,7 +126,7 @@ const DetailView = () => {
 
         <TouchableOpacity style={styles.button}
             
-            onPress = {() => console.log("button pressed")}>
+            onPress = {props.buttonPress}>
           <Text style={styles.buttonText}>Start Now</Text>
         </TouchableOpacity>
       </View>
