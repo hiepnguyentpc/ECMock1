@@ -27,7 +27,7 @@ const DetailView = () => {
         <View style={styles.totalPoints}>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <View style={styles.circle}>
-              <AntDesign name="filetext1" size={16} color="white" />
+              <AntDesign name="clockcircleo" size={16} color="white" />
             </View>
             <View style={{ marginLeft: 10 }}>
               <Text style={{ fontSize: 16, fontWeight: "bold" }}>
@@ -43,7 +43,7 @@ const DetailView = () => {
         <View style={styles.totalPoints}>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <View style={styles.circle}>
-              <AntDesign name="filetext1" size={16} color="white" />
+              <AntDesign name="staro" size={16} color="white" />
             </View>
             <View style={{ marginLeft: 10 }}>
               <Text style={{ fontSize: 16, fontWeight: "bold" }}>
@@ -117,7 +117,8 @@ const DetailView = () => {
         >
           <View style={styles.circleSmall}></View>
           <Text style={styles.titleText3}>
-            Click submit if you are sure you want to {"\n"}complete all the quizzes
+            Click submit if you are sure you want to {"\n"}complete all the
+            quizzes
           </Text>
         </View>
       </View>
