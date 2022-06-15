@@ -41,6 +41,21 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     fontSize: 14,
     color:"#333333"
+  },
+  button:{
+    width:150,
+    height:50,
+    marginTop:40,
+    borderRadius:10,
+    backgroundColor:"#0388fc",
+    alignSelf:"center",
+    alignItems:"center",
+    justifyContent:"center"
+  },
+  buttonText:{
+    fontSize:16,
+    fontWeight:"bold",
+    color:"white"
   }
 });
 

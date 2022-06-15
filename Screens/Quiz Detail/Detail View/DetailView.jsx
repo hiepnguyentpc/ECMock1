@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import styles from "./styles";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import { TouchableOpacity } from "react-native";
 
 const DetailView = () => {
   return (
@@ -121,6 +122,12 @@ const DetailView = () => {
             quizzes
           </Text>
         </View>
+
+        <TouchableOpacity style={styles.button}
+            
+            onPress = {() => console.log("button pressed")}>
+          <Text style={styles.buttonText}>Start Now</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
