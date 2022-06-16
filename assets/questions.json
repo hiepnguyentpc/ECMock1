@@ -1,0 +1,72 @@
+{
+    "results": [
+        {
+            "question": "Cầu thủ nào nhận bóng vàng 2022?",
+            "answer1": "Neymar",
+            "answer2": "Hoang",
+            "answer3": "Ronaldo",
+            "answer4": "Benzema",
+            "id": "629f405ead4b380021959637"
+        },
+        {
+            "question": "Đội nào không được dự C1",
+            "answer1": "Manchester City",
+            "answer2": "Real Madrid",
+            "answer3": "Ac Milan",
+            "answer4": "Manchester United",
+            "id": "629f4730ad4b3800219596b9"
+        },
+        {
+            "question": "Sơn Tùng MTP người tỉnh nào?",
+            "answer1": "Thái Bình",
+            "answer2": "Nam Định",
+            "answer3": "Nghệ An",
+            "answer4": "Hà Tĩnh",
+            "id": "629f8ef5ad4b380021959add"
+        },
+        {
+            "question": "Gian gian diu díu ... ?",
+            "answer1": "Mập ú",
+            "answer2": "mập chảy thây",
+            "answer3": "mập mờ",
+            "answer4": "mập như heo",
+            "id": "629f913ead4b380021959b56"
+        },
+        {
+            "question": "Ai là người đã lấy cắp nỏ thần của An Dương Vương?",
+            "answer1": "Không phải tao",
+            "answer2": "Cụ rùa",
+            "answer3": "Mị Châu",
+            "answer4": "Trọng Thủy",
+            "id": "62a066dcd26250002103873f"
+        },
+        {
+            "question": "Taylor Swift sinh năm bao nhiêu?",
+            "answer1": "1989",
+            "answer2": "1995",
+            "answer3": "1993",
+            "answer4": "1994",
+            "id": "62a1ac9cc1db8a0021793f2a"
+        },
+        {
+            "question": "Ai là người bạn thân thiết của Taylor Swift?",
+            "answer1": "Kanye West",
+            "answer2": "Scooter Braun",
+            "answer3": "Kim Kardashian",
+            "answer4": "Selena Gomez",
+            "id": "62a22bcebd6e12002153e23b"
+        },
+        {
+            "question": "Thúy Kiều là gì của Thúy Vân?",
+            "answer1": "Chị",
+            "answer2": "Em",
+            "answer3": "Mẹ",
+            "answer4": "Kẻ thù",
+            "id": "62a22f54bd6e12002153e2ae"
+        }
+    ],
+    "page": 1,
+    "limit": 8,
+    "totalPages": 6,
+    "totalResults": 47
+}

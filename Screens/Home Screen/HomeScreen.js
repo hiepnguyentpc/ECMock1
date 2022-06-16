@@ -7,7 +7,7 @@ import TabViewB from "./Components/Tab View/Tab View B/TabViewB";
 const HEADER_HEIGHT = 250;
 const HomeScreen = ({ navigation }) => {
   const buttonPressed = () => {
-    navigation.navigate("Quiz Screen");
+    navigation.navigate("Quiz Detail");
   };
 
   return (
