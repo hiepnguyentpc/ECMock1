@@ -17,12 +17,12 @@ const styles = StyleSheet.create({
     height: 30,
     width: 30,
     borderRadius: 15,
-    backgroundColor: "#D4D4D4",
+    backgroundColor: "#AEDBCE",
     alignItems: "center",
     justifyContent: "center",
   },
   option: { fontWeight: "bold", color: "white", },
-  answerText: { marginLeft: 10, fontSize: 18, fontWeight: "bold" },
+  answerText: { marginLeft: 10, fontSize: 18, fontWeight: "bold", color:"white" },
 });
 
 export default styles;

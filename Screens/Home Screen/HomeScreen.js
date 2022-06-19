@@ -4,11 +4,16 @@ import { Tabs } from "react-native-collapsible-tab-view";
 import Header from "./Components/Header/Header";
 import TabViewA from "./Components/Tab View/Tab View A/TabViewA";
 import TabViewB from "./Components/Tab View/Tab View B/TabViewB";
+
+
 const HEADER_HEIGHT = 250;
 const HomeScreen = ({ navigation }) => {
   const buttonPressed = () => {
     navigation.navigate("Quiz Detail");
   };
+
+  
+
 
   return (
     <Tabs.Container

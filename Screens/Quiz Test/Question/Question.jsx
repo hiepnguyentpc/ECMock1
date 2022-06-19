@@ -3,10 +3,17 @@
 import { View, Text, TouchableOpacity } from "react-native"
 import styles from "./styles"
 
-const Question = () => {
+
+const Question = (props) => {
+
+    
+    
+
+
     return(
         <View style={{backgroundColor:"white", height:"100%"}}>
-            <Text style={{marginTop: 40,fontSize:20, fontWeight:"bold", alignSelf:"center", marginBottom:40,}}>What is the meaning of UI UX Design?</Text>
+            <Text style={{marginTop: 40,fontSize:20, fontWeight:"bold", alignSelf:"center", marginBottom:40,}}>{props.question}</Text>
+
 
 
             <TouchableOpacity style={styles.touchableOp}
@@ -15,29 +22,8 @@ const Question = () => {
                 <View style={styles.circle}>
                     <Text style={styles.option}>A</Text>
                 </View>
-                <Text style={styles.answerText}>User Interface and User Experience</Text>
+                <Text style={styles.answerText}>{props.answer1}</Text>
             </TouchableOpacity>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -46,7 +32,7 @@ const Question = () => {
                 <View style={styles.circle}>
                     <Text style={styles.option}>B</Text>
                 </View>
-                <Text style={styles.answerText}>User Interface and User Experience</Text>
+                <Text style={styles.answerText}>{props.answer2}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.touchableOp}
@@ -54,7 +40,7 @@ const Question = () => {
                 <View style={styles.circle}>
                     <Text style={styles.option}>C</Text>
                 </View>
-                <Text style={styles.answerText}>User Interface and User Experience</Text>
+                <Text style={styles.answerText}>{props.answer3}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.touchableOp}
@@ -62,14 +48,8 @@ const Question = () => {
                 <View style={styles.circle}>
                     <Text style={styles.option}>D</Text>
                 </View>
-                <Text style={styles.answerText}>User Interface and User Experience</Text>
+                <Text style={styles.answerText}>{props.answer4}</Text>
             </TouchableOpacity>
-
-
-
-
-
-
         </View>
     )
 }

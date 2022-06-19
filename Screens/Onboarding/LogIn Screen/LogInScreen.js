@@ -11,25 +11,33 @@ import styles from "./styles";
 import axios from "axios";
 import { useState } from "react";
 import { Keyboard } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function LogInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const onPress = () => {
+  const [response, setResponse] = useState("")
+
+  const onPress = async () => {
     axios
       .post("https://fwa-ec-quiz-mock1.herokuapp.com/v1/auth/login", {
         username: email,
         password: password,
       })
       .then((response) => {
-        navigation.navigate("Home Screen")
+        let accessToken = AsyncStorage.setItem('accessToken', response.data.tokens.access.token)
+        alert("success")
+        navigation.navigate('Home Screen')
       })
       .catch((error) => {
-        alert("ERROR");
+        alert(error);
       });
   };
 
+
+    
+  
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <LinearGradient
