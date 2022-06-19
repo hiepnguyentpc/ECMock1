@@ -38,7 +38,7 @@ const QuizMain = () => {
       { headers: {"Authorization" : `Bearer ${accessToken}`} }
     )
 
-    
+
     .then((response) => {
       setQuestion(response.data.results)
     })
@@ -62,43 +62,43 @@ const QuizMain = () => {
 
       <Tabs.Tab name="2">
         <Tabs.ScrollView>
-          <Question question={question[1]?.["question"]} answer1={question[1]?.["answer1"]} answer2={question[1]?.["answer2"]} answer3={question[1]?.["answer3"]} answer4={question[1]?.["answer4"]}/>
+          <Question question={question[1]?.["question"]} id ={question[1]?.["id"]} answer1={question[1]?.["answer1"]} answer2={question[1]?.["answer2"]} answer3={question[1]?.["answer3"]} answer4={question[1]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="3">
         <Tabs.ScrollView>
-          <Question question={question[2]?.["question"]} answer1={question[2]?.["answer1"]} answer2={question[2]?.["answer2"]} answer3={question[2]?.["answer3"]} answer4={question[2]?.["answer4"]}/>
+          <Question question={question[2]?.["question"]}id ={question[2]?.["id"]} answer1={question[2]?.["answer1"]} answer2={question[2]?.["answer2"]} answer3={question[2]?.["answer3"]} answer4={question[2]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="4">
         <Tabs.ScrollView>
-          <Question question={question[3]?.["question"]} answer1={question[3]?.["answer1"]} answer2={question[3]?.["answer2"]} answer3={question[3]?.["answer3"]} answer4={question[3]?.["answer4"]}/>
+          <Question question={question[3]?.["question"]} id ={question[3]?.["id"]} answer1={question[3]?.["answer1"]} answer2={question[3]?.["answer2"]} answer3={question[3]?.["answer3"]} answer4={question[3]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="5">
         <Tabs.ScrollView>
-          <Question question={question[4]?.["question"]} answer1={question[4]?.["answer1"]} answer2={question[4]?.["answer2"]} answer3={question[4]?.["answer3"]} answer4={question[4]?.["answer4"]}/>
+          <Question question={question[4]?.["question"]} id ={question[4]?.["id"]} answer1={question[4]?.["answer1"]} answer2={question[4]?.["answer2"]} answer3={question[4]?.["answer3"]} answer4={question[4]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="6">
         <Tabs.ScrollView>
-          <Question question={question[5]?.["question"]} answer1={question[5]?.["answer1"]} answer2={question[5]?.["answer2"]} answer3={question[5]?.["answer3"]} answer4={question[5]?.["answer4"]}/>
+          <Question question={question[5]?.["question"]} id ={question[5]?.["id"]} answer1={question[5]?.["answer1"]} answer2={question[5]?.["answer2"]} answer3={question[5]?.["answer3"]} answer4={question[5]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="7">
         <Tabs.ScrollView>
-          <Question question={question[6]?.["question"]} answer1={question[6]?.["answer1"]} answer2={question[6]?.["answer2"]} answer3={question[6]?.["answer3"]} answer4={question[6]?.["answer4"]}/>
+          <Question question={question[6]?.["question"]} id ={question[6]?.["id"]} answer1={question[6]?.["answer1"]} answer2={question[6]?.["answer2"]} answer3={question[6]?.["answer3"]} answer4={question[6]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="8">
         <Tabs.ScrollView>
-          <Question question={question[7]?.["question"]} answer1={question[7]?.["answer1"]} answer2={question[7]?.["answer2"]} answer3={question[7]?.["answer3"]} answer4={question[7]?.["answer4"]}/>
+          <Question question={question[7]?.["question"]} id ={question[7]?.["id"]} answer1={question[7]?.["answer1"]} answer2={question[7]?.["answer2"]} answer3={question[7]?.["answer3"]} answer4={question[7]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
     </Tabs.Container>

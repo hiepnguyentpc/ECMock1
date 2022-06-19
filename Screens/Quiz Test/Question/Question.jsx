@@ -36,6 +36,7 @@ const Question = (props) => {
       )
       .then((response) => {
         console.log(response.data);
+        alert(response.data[0].result)
       })
       .catch((error) => {
         console.log(error.response.data);
