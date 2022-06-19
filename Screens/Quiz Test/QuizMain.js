@@ -37,6 +37,8 @@ const QuizMain = () => {
       "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions?page=1&limit=8",
       { headers: {"Authorization" : `Bearer ${accessToken}`} }
     )
+
+    
     .then((response) => {
       setQuestion(response.data.results)
     })

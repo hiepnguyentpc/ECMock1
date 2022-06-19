@@ -5,11 +5,11 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useState } from "react";
 
 const Question = (props) => {
-  //const [accessToken, setAccessToken] = useState("")
+  const [accessToken, setAccessToken] = useState("")
   const id = props.id;
   const [answer, setAnswer] = useState("");
 
-  /*
+  
     const storeAccessToken = async () => {
         try {
           setAccessToken(await AsyncStorage.getItem("accessToken"));
@@ -18,48 +18,32 @@ const Question = (props) => {
         }
       };
       storeAccessToken();
-      */
-  /*
-    if (answer){
-        console.log(answer)
-    }
-
-    if (id){
-        console.log(id)
-    }
-
-    */
-
-  var postData = {
-    id: id,
-    correctanswer: answer,
-  };
-
-  const accessToken =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmEwNzFlNWQyNjI1MDAwMjEwMzk0YjUiLCJpYXQiOjE2NTU2NjMzMDAsImV4cCI6MTY1NTY2MzQ4MCwidHlwZSI6ImFjY2VzcyJ9.aDUjqjYlGmJHgGW10GSJkMl97ifA25HgLZdDsmDS8RQ";
+      
+  
   const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/submit";
+  
   const submitAnswer = () => {
-    axios
-      .post(
+    axios.post(
         url,
-        { headers: { Authorization: `Bearer ${accessToken}` } },
-        {
-          data: [
-            {
-              id: "62a066dcd26250002103873f",
-              correctanswer: "Mị Châu",
-            },
-          ],
-        }
+            [
+                {
+                    "id": id,
+                    "correctanswer": answer
+                }
+            ]
+        ,
+        { headers: {"Authorization" : `Bearer ${accessToken}`} }
       )
       .then((response) => {
         console.log(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error.response.data);
       });
   };
+  
   //submitAnswer()
+
 
   return (
     <View style={{ backgroundColor: "white", height: "100%" }}>
