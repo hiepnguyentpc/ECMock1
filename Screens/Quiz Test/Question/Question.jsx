@@ -10,6 +10,12 @@ const Question = (props) => {
   const [accessToken, setAccessToken] = useState("")
   let id = props.id;
   const [answer, setAnswer] = useState("");
+  const [btncolor, setBtncolor] = useState("")
+  const [selected1, setSelected1] = useState(false)
+  const [selected2, setSelected2] = useState(false)
+  const [selected3, setSelected3] = useState(false)
+  const [selected4, setSelected4] = useState(false)
+
   const setScore = props.setScore
   
   
@@ -61,16 +67,15 @@ const Question = (props) => {
         {props.question}
       </Text>
 
-
-
-
-
-
-
       <TouchableOpacity
-        style={styles.touchableOp}
+        style={[styles.touchableOp, {backgroundColor: selected1 == false ? "#34A0A4":"blue",}]}
         onPress={() => {
           setAnswer(props.answer1);
+
+          setSelected2(false)
+          setSelected3(false)
+          setSelected4(false)
+          selected1 == false ? setSelected1(true) : setSelected1(false)
         }}
       >
         <View style={styles.circle}>
@@ -83,9 +88,14 @@ const Question = (props) => {
 
 
       <TouchableOpacity
-        style={styles.touchableOp}
+        style={[styles.touchableOp, {backgroundColor: selected2 == false ? "#34A0A4":"blue",}]}
         onPress={() => {
           setAnswer(props.answer2);
+          setSelected1(false)
+          setSelected3(false)
+          setSelected4(false)
+          selected2 == false ? setSelected2(true) : setSelected2(false)
+
         }}
       >
         <View style={styles.circle}>
@@ -95,9 +105,14 @@ const Question = (props) => {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={styles.touchableOp}
+        style={[styles.touchableOp, {backgroundColor: selected3 == false ? "#34A0A4":"blue",}]}
         onPress={() => {
           setAnswer(props.answer3);
+          setSelected1(false)
+          setSelected2(false)
+          setSelected4(false)
+          selected3 == false ? setSelected3(true) : setSelected3(false)
+
         }}
       >
         <View style={styles.circle}>
@@ -107,9 +122,14 @@ const Question = (props) => {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={styles.touchableOp}
+        style={[styles.touchableOp, {backgroundColor: selected4 == false ? "#34A0A4":"blue",}]}
         onPress={() => {
           setAnswer(props.answer4);
+          setSelected1(false)
+          setSelected2(false)
+          setSelected3(false)
+          selected4 == false ? setSelected4(true) : setSelected4(false)
+
         }}
       >
         <View style={styles.circle}>
