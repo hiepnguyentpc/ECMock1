@@ -6,24 +6,24 @@ import { useState } from "react";
 
 const Question = (props) => {
   const [accessToken, setAccessToken] = useState("")
-  const id = props.id;
+  let id = props.id;
   const [answer, setAnswer] = useState("");
-
+  const setScore = props.setScore
+  
   
     const storeAccessToken = async () => {
         try {
-          setAccessToken(await AsyncStorage.getItem("accessToken"));
+            setAccessToken(await AsyncStorage.getItem("accessToken"));
         } catch (error) {
-          console.log(error);
+            console.log(error);
         }
-      };
-      storeAccessToken();
-      
-  
+        };
+        storeAccessToken();
+   
   const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/submit";
   
-  const submitAnswer = () => {
-    axios.post(
+  const submitAnswer =  () => {
+     axios.post(
         url,
             [
                 {
@@ -35,16 +35,15 @@ const Question = (props) => {
         { headers: {"Authorization" : `Bearer ${accessToken}`} }
       )
       .then((response) => {
-        console.log(response.data);
-        alert(response.data[0].result)
+        console.log(response.data[0].result);
+        if ((response.data[0].result) && (String(response.data[0].result) == 'true') ){
+            setScore((currScore) => currScore +1)
+        }
       })
       .catch((error) => {
-        console.log(error.response.data);
+        console.log(error);
       });
   };
-  
-  //submitAnswer()
-
 
   return (
     <View style={{ backgroundColor: "white", height: "100%" }}>
@@ -63,7 +62,6 @@ const Question = (props) => {
         style={styles.touchableOp}
         onPress={() => {
           setAnswer(props.answer1);
-          submitAnswer();
         }}
       >
         <View style={styles.circle}>
@@ -75,7 +73,6 @@ const Question = (props) => {
         style={styles.touchableOp}
         onPress={() => {
           setAnswer(props.answer2);
-          submitAnswer();
         }}
       >
         <View style={styles.circle}>
@@ -88,7 +85,6 @@ const Question = (props) => {
         style={styles.touchableOp}
         onPress={() => {
           setAnswer(props.answer3);
-          submitAnswer();
         }}
       >
         <View style={styles.circle}>
@@ -101,7 +97,6 @@ const Question = (props) => {
         style={styles.touchableOp}
         onPress={() => {
           setAnswer(props.answer4);
-          submitAnswer();
         }}
       >
         <View style={styles.circle}>
@@ -109,6 +104,25 @@ const Question = (props) => {
         </View>
         <Text style={styles.answerText}>{props.answer4}</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.submit}
+        onPress={()=>{
+            submitAnswer()
+
+        }}
+      >
+        <Text style={styles.submitText}>Submit</Text>
+      </TouchableOpacity>
+
+        <TouchableOpacity
+            style={styles.submit}
+            onPress = {props.onPress}
+        >
+            <Text style={styles.submitText}>End Quiz</Text>
+
+        </TouchableOpacity>
+
     </View>
   );
 };

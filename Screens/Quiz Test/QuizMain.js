@@ -10,17 +10,28 @@ const HEADER_HEIGHT = 250;
 
 import HeaderQuizMain from "./Header/Header";
 import Question from "./Question/Question";
+import { TouchableOpacity } from "react-native-web";
 
 
-const QuizMain = () => {
+const QuizMain = ({navigation}) => {
 
   const getBackPressed = () => {
     console.log("hello");
   };
 
+  const endQuizPressed = () =>{
+    navigation.navigate('Quiz Result',{
+      totalScore: score
+    })
+    //alert("Your total score: " + score)
+  }
+
 
   const [accessToken, setAccessToken] = useState("")
   const [question, setQuestion] = useState("")
+  const [score, setScore] = useState(0)
+
+  //console.log(score)
 
   const storeAccessToken = async () => {
     try {
@@ -37,8 +48,6 @@ const QuizMain = () => {
       "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions?page=1&limit=8",
       { headers: {"Authorization" : `Bearer ${accessToken}`} }
     )
-
-
     .then((response) => {
       setQuestion(response.data.results)
     })
@@ -49,6 +58,8 @@ const QuizMain = () => {
   if (!question){
     getQuestionUser()
   }
+
+
   return (
     <Tabs.Container
       renderHeader={HeaderQuizMain}
@@ -56,49 +67,52 @@ const QuizMain = () => {
     >
       <Tabs.Tab name="1">
         <Tabs.ScrollView>
-          <Question question={question[0]?.["question"]} id ={question[0]?.["id"]} answer1={question[0]?.["answer1"]} answer2={question[0]?.["answer2"]} answer3={question[0]?.["answer3"]} answer4={question[0]?.["answer4"]}/>
+          <Question question={question[0]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[0]?.["id"]} answer1={question[0]?.["answer1"]} answer2={question[0]?.["answer2"]} answer3={question[0]?.["answer3"]} answer4={question[0]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="2">
         <Tabs.ScrollView>
-          <Question question={question[1]?.["question"]} id ={question[1]?.["id"]} answer1={question[1]?.["answer1"]} answer2={question[1]?.["answer2"]} answer3={question[1]?.["answer3"]} answer4={question[1]?.["answer4"]}/>
+          <Question question={question[1]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[1]?.["id"]} answer1={question[1]?.["answer1"]} answer2={question[1]?.["answer2"]} answer3={question[1]?.["answer3"]} answer4={question[1]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="3">
         <Tabs.ScrollView>
-          <Question question={question[2]?.["question"]}id ={question[2]?.["id"]} answer1={question[2]?.["answer1"]} answer2={question[2]?.["answer2"]} answer3={question[2]?.["answer3"]} answer4={question[2]?.["answer4"]}/>
+          <Question question={question[2]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[2]?.["id"]} answer1={question[2]?.["answer1"]} answer2={question[2]?.["answer2"]} answer3={question[2]?.["answer3"]} answer4={question[2]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="4">
         <Tabs.ScrollView>
-          <Question question={question[3]?.["question"]} id ={question[3]?.["id"]} answer1={question[3]?.["answer1"]} answer2={question[3]?.["answer2"]} answer3={question[3]?.["answer3"]} answer4={question[3]?.["answer4"]}/>
+          <Question question={question[3]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[3]?.["id"]} answer1={question[3]?.["answer1"]} answer2={question[3]?.["answer2"]} answer3={question[3]?.["answer3"]} answer4={question[3]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="5">
         <Tabs.ScrollView>
-          <Question question={question[4]?.["question"]} id ={question[4]?.["id"]} answer1={question[4]?.["answer1"]} answer2={question[4]?.["answer2"]} answer3={question[4]?.["answer3"]} answer4={question[4]?.["answer4"]}/>
+          <Question question={question[4]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[4]?.["id"]} answer1={question[4]?.["answer1"]} answer2={question[4]?.["answer2"]} answer3={question[4]?.["answer3"]} answer4={question[4]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="6">
         <Tabs.ScrollView>
-          <Question question={question[5]?.["question"]} id ={question[5]?.["id"]} answer1={question[5]?.["answer1"]} answer2={question[5]?.["answer2"]} answer3={question[5]?.["answer3"]} answer4={question[5]?.["answer4"]}/>
+          <Question question={question[5]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[5]?.["id"]} answer1={question[5]?.["answer1"]} answer2={question[5]?.["answer2"]} answer3={question[5]?.["answer3"]} answer4={question[5]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="7">
         <Tabs.ScrollView>
-          <Question question={question[6]?.["question"]} id ={question[6]?.["id"]} answer1={question[6]?.["answer1"]} answer2={question[6]?.["answer2"]} answer3={question[6]?.["answer3"]} answer4={question[6]?.["answer4"]}/>
+          <Question question={question[6]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[6]?.["id"]} answer1={question[6]?.["answer1"]} answer2={question[6]?.["answer2"]} answer3={question[6]?.["answer3"]} answer4={question[6]?.["answer4"]}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
 
       <Tabs.Tab name="8">
         <Tabs.ScrollView>
-          <Question question={question[7]?.["question"]} id ={question[7]?.["id"]} answer1={question[7]?.["answer1"]} answer2={question[7]?.["answer2"]} answer3={question[7]?.["answer3"]} answer4={question[7]?.["answer4"]}/>
+          
+          <Question question={question[7]?.["question"]} onPress = {endQuizPressed} setScore={setScore} id ={question[7]?.["id"]} answer1={question[7]?.["answer1"]} answer2={question[7]?.["answer2"]} answer3={question[7]?.["answer3"]} answer4={question[7]?.["answer4"]}/>
+          
+          
         </Tabs.ScrollView>
       </Tabs.Tab>
     </Tabs.Container>

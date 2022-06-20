@@ -14,6 +14,7 @@ import QuizMain from "./Screens/Quiz Test/QuizMain";
 
 import { NavigationContainer, StackActions } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import QuizResultScreen from "./Screens/Quiz Results/QuizResultScreen";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
       <Stack.Screen name = "Home Screen" options={{headerShown:false}} component={HomeScreen}/>
       <Stack.Screen name = "Quiz Detail" options={{headerShown:false}} component={QuizDetailScreen}/>
       <Stack.Screen name = "Quiz Main" options = {{headerShown:false}} component={QuizMain}/>
+      <Stack.Screen name = "Quiz Result" options={{headerShown:false}} component={QuizResultScreen}/>
 
 
       </Stack.Navigator>

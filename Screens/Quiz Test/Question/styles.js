@@ -10,7 +10,27 @@ const styles = StyleSheet.create({
     height:70,
     width:360,
     borderRadius:10, 
-    
+  },
+
+  submit:{
+    flexDirection: "row",
+    marginLeft: 30,
+    marginBottom: 30,
+    alignItems: "center",
+    alignSelf:"center",
+    justifyContent:"center",
+    backgroundColor:"#34A0A4",
+    height:50,
+    width:120,
+    borderRadius:10, 
+
+  },
+  submitText:{
+    fontWeight:"bold",
+    fontSize:16,
+    color:"white",
+    alignSelf:"center",
+
   },
   circle: {
     marginLeft: 5,
