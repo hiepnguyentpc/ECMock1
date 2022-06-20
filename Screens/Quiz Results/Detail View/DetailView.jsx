@@ -19,7 +19,7 @@ const DetailView = (props) => {
             </View>
             <View style={{ marginLeft: 10 }}>
               <Text style={{ fontSize: 16, fontWeight: "bold" }}>
-                {totalScore}/10 Questions
+                {totalScore}/8 Questions
               </Text>
               <Text style={{ fontSize: 14, color: "#999999" }}>
                 10 point for a correct answer

@@ -41,11 +41,7 @@ export default function SignUpScreen({ navigation }) {
       colors={["#3550DC", "#27E9F7"]}
       style={styles.linearGradient}
     >
-      <TouchableOpacity style={styles.getBackButton} onPress={() => navigation.navigate("First Screen")}>
-        <Ionicons name="arrow-back-circle-outline" size={30} color="white" />
-      </TouchableOpacity>
-
-
+    
       <View style={styles.container}>
         <Text style={styles.createAccountText}>Create your account</Text>
 

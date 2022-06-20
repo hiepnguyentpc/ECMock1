@@ -11,13 +11,13 @@ import styles from "./styles";
 import axios from "axios";
 import { useState } from "react";
 import { Keyboard } from "react-native";
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function LogInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [response, setResponse] = useState("")
+  const [response, setResponse] = useState("");
 
   const onPress = async () => {
     axios
@@ -26,18 +26,18 @@ export default function LogInScreen({ navigation }) {
         password: password,
       })
       .then((response) => {
-        let accessToken = AsyncStorage.setItem('accessToken', response.data.tokens.access.token)
-        alert("success")
-        navigation.navigate('Home Screen')
+        let accessToken = AsyncStorage.setItem(
+          "accessToken",
+          response.data.tokens.access.token
+        );
+        alert("success");
+        navigation.navigate("Home Screen");
       })
       .catch((error) => {
         alert(error);
       });
   };
 
-
-    
-  
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <LinearGradient
@@ -47,13 +47,6 @@ export default function LogInScreen({ navigation }) {
         colors={["#3550DC", "#27E9F7"]}
         style={styles.linearGradient}
       >
-        <TouchableOpacity
-          style={styles.getBackButton}
-          onPress={() => navigation.navigate("First Screen")}
-        >
-          <Ionicons name="arrow-back-circle-outline" color={"white"} size={30} />
-        </TouchableOpacity>
-
         <View style={styles.container}>
           <Text style={styles.welcomeBackText}>Welcome Back!</Text>
 

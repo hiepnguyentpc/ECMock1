@@ -43,7 +43,7 @@ const Question = (props) => {
         { headers: {"Authorization" : `Bearer ${accessToken}`} }
       )
       .then((response) => {
-        console.log(response.data[0].result);
+        alert(response.data[0].result);
         if ((response.data[0].result) && (String(response.data[0].result) == 'true') ){
             setScore((currScore) => currScore +1)
         }
@@ -83,10 +83,6 @@ const Question = (props) => {
         </View>
         <Text style={styles.answerText}>{props.answer1}</Text>
       </TouchableOpacity>
-
-
-
-
       <TouchableOpacity
         style={[styles.touchableOp, {backgroundColor: selected2 == false ? "#34A0A4":"blue",}]}
         onPress={() => {
@@ -142,7 +138,6 @@ const Question = (props) => {
         style={styles.submit}
         onPress={()=>{
             submitAnswer()
-
         }}
       >
         <Text style={styles.submitText}>Submit</Text>

@@ -21,17 +21,6 @@ const HeaderQuizMain = (props) => {
     >
       <View style={styles.container}>
         <View style={{ flexDirection: "row", marginBottom: 10, top: 40 }}>
-          <TouchableOpacity
-            style={styles.getBackButton}
-            onPress={() => console.log("hello")}
-          >
-            <Ionicons
-              name="arrow-back-circle-outline"
-              color={"white"}
-              size={30}
-            />
-          </TouchableOpacity>
-
           <Image
             style={styles.avatar}
             source={{
