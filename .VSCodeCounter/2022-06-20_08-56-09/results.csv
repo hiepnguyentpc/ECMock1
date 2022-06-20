@@ -1,0 +1,46 @@
+"filename", "language", "JSON", "JavaScript", "comment", "blank", "total"
+"/Users/hiepnnguyen/Downloads/ECMock1-main/.expo-shared/assets.json", "JSON", 4, 0, 0, 1, 5
+"/Users/hiepnnguyen/Downloads/ECMock1-main/App.js", "JavaScript", 0, 26, 8, 18, 52
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Header/Header.jsx", "JavaScript", 0, 41, 0, 7, 48
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Header/styles.js", "JavaScript", 0, 48, 0, 6, 54
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/Quiz Component/Quiz.jsx", "JavaScript", 0, 9, 0, 0, 9
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/QuizList.jsx", "JavaScript", 0, 12, 21, 18, 51
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/styles.js", "JavaScript", 0, 15, 0, 3, 18
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/QuizButton/QuizButton.jsx", "JavaScript", 0, 63, 0, 5, 68
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/QuizButton/styles.js", "JavaScript", 0, 36, 0, 3, 39
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View A/TabViewA.jsx", "JavaScript", 0, 13, 0, 6, 19
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View A/styles.js", "JavaScript", 0, 11, 0, 1, 12
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View B/TabViewB.jsx", "JavaScript", 0, 14, 0, 3, 17
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View B/styles.js", "JavaScript", 0, 11, 0, 1, 12
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/HomeScreen.js", "JavaScript", 0, 45, 0, 10, 55
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/styles.js", "JavaScript", 0, 11, 0, 4, 15
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/First Screen/FirstScreen.js", "JavaScript", 0, 38, 0, 7, 45
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/First Screen/styles.js", "JavaScript", 0, 48, 0, 3, 51
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/LogIn Screen/LogInScreen.js", "JavaScript", 0, 95, 0, 14, 109
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/LogIn Screen/styles.js", "JavaScript", 0, 66, 0, 2, 68
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/SignUp Screen/SignUpScreen.js", "JavaScript", 0, 104, 0, 25, 129
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/SignUp Screen/styles.js", "JavaScript", 0, 66, 0, 2, 68
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Detail View/DetailView.jsx", "JavaScript", 0, 124, 0, 14, 138
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Detail View/styles.js", "JavaScript", 0, 60, 0, 3, 63
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Header/Header.jsx", "JavaScript", 0, 32, 0, 7, 39
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Header/styles.js", "JavaScript", 0, 48, 0, 5, 53
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/QuizDetailScreen.js", "JavaScript", 0, 24, 0, 8, 32
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/styles.js", "JavaScript", 0, 25, 0, 3, 28
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Detail View/DetailView.jsx", "JavaScript", 0, 52, 0, 21, 73
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Detail View/styles.js", "JavaScript", 0, 60, 0, 3, 63
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Header/Header.jsx", "JavaScript", 0, 32, 0, 7, 39
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Header/styles.js", "JavaScript", 0, 48, 0, 5, 53
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/QuizResultScreen.js", "JavaScript", 0, 25, 1, 9, 35
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/styles.js", "JavaScript", 0, 25, 0, 3, 28
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Header/Header.jsx", "JavaScript", 0, 48, 0, 4, 52
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Header/styles.js", "JavaScript", 0, 48, 0, 5, 53
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Question/Question.jsx", "JavaScript", 0, 117, 0, 27, 144
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Question/styles.js", "JavaScript", 0, 43, 0, 6, 49
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/QuizMain.js", "JavaScript", 0, 101, 2, 28, 131
+"/Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/styles.js", "JavaScript", 0, 0, 0, 1, 1
+"/Users/hiepnnguyen/Downloads/ECMock1-main/app.json", "JSON", 18, 0, 16, 0, 34
+"/Users/hiepnnguyen/Downloads/ECMock1-main/assets/questions.json", "JSON", 72, 0, 0, 0, 72
+"/Users/hiepnnguyen/Downloads/ECMock1-main/babel.config.js", "JavaScript", 0, 7, 0, 4, 11
+"/Users/hiepnnguyen/Downloads/ECMock1-main/package-lock.json", "JSON", 20643, 0, 0, 1, 20644
+"/Users/hiepnnguyen/Downloads/ECMock1-main/package.json", "JSON", 37, 0, 0, 1, 38
+"Total", "-", 20774, 1691, 48, 304, 22817

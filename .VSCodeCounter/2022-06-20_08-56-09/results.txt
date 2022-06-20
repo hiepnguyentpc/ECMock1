@@ -1,0 +1,94 @@
+Date : 2022-06-20 08:56:09
+Directory : /Users/hiepnnguyen/Downloads/ECMock1-main
+Total : 44 files,  22465 codes, 48 comments, 304 blanks, all 22817 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          5 |     20,774 |         16 |          3 |     20,793 |
+| JavaScript |         39 |      1,691 |         32 |        301 |      2,024 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                        | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                           |         44 |     22,465 |         48 |        304 |     22,817 |
+| .expo-shared                                                                                                |          1 |          4 |          0 |          1 |          5 |
+| Screens                                                                                                     |         37 |      1,658 |         24 |        279 |      1,961 |
+| Screens/Home Screen                                                                                         |         13 |        329 |         21 |         67 |        417 |
+| Screens/Home Screen/Components                                                                              |         11 |        273 |         21 |         53 |        347 |
+| Screens/Home Screen/Components/Header                                                                       |          2 |         89 |          0 |         13 |        102 |
+| Screens/Home Screen/Components/Quiz List                                                                    |          3 |         36 |         21 |         21 |         78 |
+| Screens/Home Screen/Components/Quiz List/Quiz Component                                                     |          1 |          9 |          0 |          0 |          9 |
+| Screens/Home Screen/Components/Tab View                                                                     |          6 |        148 |          0 |         19 |        167 |
+| Screens/Home Screen/Components/Tab View/QuizButton                                                          |          2 |         99 |          0 |          8 |        107 |
+| Screens/Home Screen/Components/Tab View/Tab View A                                                          |          2 |         24 |          0 |          7 |         31 |
+| Screens/Home Screen/Components/Tab View/Tab View B                                                          |          2 |         25 |          0 |          4 |         29 |
+| Screens/Onboarding                                                                                          |          6 |        417 |          0 |         53 |        470 |
+| Screens/Onboarding/First Screen                                                                             |          2 |         86 |          0 |         10 |         96 |
+| Screens/Onboarding/LogIn Screen                                                                             |          2 |        161 |          0 |         16 |        177 |
+| Screens/Onboarding/SignUp Screen                                                                            |          2 |        170 |          0 |         27 |        197 |
+| Screens/Quiz Detail                                                                                         |          6 |        313 |          0 |         40 |        353 |
+| Screens/Quiz Detail/Detail View                                                                             |          2 |        184 |          0 |         17 |        201 |
+| Screens/Quiz Detail/Header                                                                                  |          2 |         80 |          0 |         12 |         92 |
+| Screens/Quiz Results                                                                                        |          6 |        242 |          1 |         48 |        291 |
+| Screens/Quiz Results/Detail View                                                                            |          2 |        112 |          0 |         24 |        136 |
+| Screens/Quiz Results/Header                                                                                 |          2 |         80 |          0 |         12 |         92 |
+| Screens/Quiz Test                                                                                           |          6 |        357 |          2 |         71 |        430 |
+| Screens/Quiz Test/Header                                                                                    |          2 |         96 |          0 |          9 |        105 |
+| Screens/Quiz Test/Question                                                                                  |          2 |        160 |          0 |         33 |        193 |
+| assets                                                                                                      |          1 |         72 |          0 |          0 |         72 |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                    | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/hiepnnguyen/Downloads/ECMock1-main/.expo-shared/assets.json                                          | JSON       |          4 |          0 |          1 |          5 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/App.js                                                            | JavaScript |         26 |          8 |         18 |         52 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Header/Header.jsx                  | JavaScript |         41 |          0 |          7 |         48 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Header/styles.js                   | JavaScript |         48 |          0 |          6 |         54 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/Quiz Component/Quiz.jsx  | JavaScript |          9 |          0 |          0 |          9 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/QuizList.jsx             | JavaScript |         12 |         21 |         18 |         51 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Quiz List/styles.js                | JavaScript |         15 |          0 |          3 |         18 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/QuizButton/QuizButton.jsx | JavaScript |         63 |          0 |          5 |         68 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/QuizButton/styles.js      | JavaScript |         36 |          0 |          3 |         39 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View A/TabViewA.jsx   | JavaScript |         13 |          0 |          6 |         19 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View A/styles.js      | JavaScript |         11 |          0 |          1 |         12 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View B/TabViewB.jsx   | JavaScript |         14 |          0 |          3 |         17 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/Components/Tab View/Tab View B/styles.js      | JavaScript |         11 |          0 |          1 |         12 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/HomeScreen.js                                 | JavaScript |         45 |          0 |         10 |         55 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Home Screen/styles.js                                     | JavaScript |         11 |          0 |          4 |         15 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/First Screen/FirstScreen.js                    | JavaScript |         38 |          0 |          7 |         45 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/First Screen/styles.js                         | JavaScript |         48 |          0 |          3 |         51 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/LogIn Screen/LogInScreen.js                    | JavaScript |         95 |          0 |         14 |        109 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/LogIn Screen/styles.js                         | JavaScript |         66 |          0 |          2 |         68 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/SignUp Screen/SignUpScreen.js                  | JavaScript |        104 |          0 |         25 |        129 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Onboarding/SignUp Screen/styles.js                        | JavaScript |         66 |          0 |          2 |         68 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Detail View/DetailView.jsx                    | JavaScript |        124 |          0 |         14 |        138 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Detail View/styles.js                         | JavaScript |         60 |          0 |          3 |         63 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Header/Header.jsx                             | JavaScript |         32 |          0 |          7 |         39 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/Header/styles.js                              | JavaScript |         48 |          0 |          5 |         53 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/QuizDetailScreen.js                           | JavaScript |         24 |          0 |          8 |         32 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Detail/styles.js                                     | JavaScript |         25 |          0 |          3 |         28 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Detail View/DetailView.jsx                   | JavaScript |         52 |          0 |         21 |         73 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Detail View/styles.js                        | JavaScript |         60 |          0 |          3 |         63 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Header/Header.jsx                            | JavaScript |         32 |          0 |          7 |         39 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/Header/styles.js                             | JavaScript |         48 |          0 |          5 |         53 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/QuizResultScreen.js                          | JavaScript |         25 |          1 |          9 |         35 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Results/styles.js                                    | JavaScript |         25 |          0 |          3 |         28 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Header/Header.jsx                               | JavaScript |         48 |          0 |          4 |         52 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Header/styles.js                                | JavaScript |         48 |          0 |          5 |         53 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Question/Question.jsx                           | JavaScript |        117 |          0 |         27 |        144 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/Question/styles.js                              | JavaScript |         43 |          0 |          6 |         49 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/QuizMain.js                                     | JavaScript |        101 |          2 |         28 |        131 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/Screens/Quiz Test/styles.js                                       | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/app.json                                                          | JSON       |         18 |         16 |          0 |         34 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/assets/questions.json                                             | JSON       |         72 |          0 |          0 |         72 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/babel.config.js                                                   | JavaScript |          7 |          0 |          4 |         11 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/package-lock.json                                                 | JSON       |     20,643 |          0 |          1 |     20,644 |
+| /Users/hiepnnguyen/Downloads/ECMock1-main/package.json                                                      | JSON       |         37 |          0 |          1 |         38 |
+| Total                                                                                                       |            |     22,465 |         48 |        304 |     22,817 |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

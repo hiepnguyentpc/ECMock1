@@ -2,6 +2,8 @@ import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import SimpleSelectButton from 'react-native-simple-select-button';
+
 import { useState } from "react";
 
 const Question = (props) => {
@@ -58,6 +60,13 @@ const Question = (props) => {
       >
         {props.question}
       </Text>
+
+
+
+
+
+
+
       <TouchableOpacity
         style={styles.touchableOp}
         onPress={() => {
@@ -69,6 +78,10 @@ const Question = (props) => {
         </View>
         <Text style={styles.answerText}>{props.answer1}</Text>
       </TouchableOpacity>
+
+
+
+
       <TouchableOpacity
         style={styles.touchableOp}
         onPress={() => {

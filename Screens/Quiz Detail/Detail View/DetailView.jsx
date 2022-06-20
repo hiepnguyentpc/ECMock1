@@ -17,10 +17,10 @@ const DetailView = (props) => {
             </View>
             <View style={{ marginLeft: 10 }}>
               <Text style={{ fontSize: 16, fontWeight: "bold" }}>
-                10 Questions
+                8 Questions
               </Text>
               <Text style={{ fontSize: 14, color: "#999999" }}>
-                10 point for a correct answer
+                12.5 points for a correct answer
               </Text>
             </View>
           </View>
@@ -33,7 +33,7 @@ const DetailView = (props) => {
             </View>
             <View style={{ marginLeft: 10 }}>
               <Text style={{ fontSize: 16, fontWeight: "bold" }}>
-                1 hour 15 min
+                15 min
               </Text>
               <Text style={{ fontSize: 14, color: "#999999" }}>
                 Total duration of the quiz
