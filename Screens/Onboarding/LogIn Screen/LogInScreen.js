@@ -16,7 +16,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 export default function LogInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [response, setResponse] = useState("");
 
   const onPress = async () => {

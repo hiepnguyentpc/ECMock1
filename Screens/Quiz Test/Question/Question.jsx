@@ -29,6 +29,8 @@ const Question = (props) => {
         storeAccessToken();
    
   const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/submit";
+
+  /*
   
   const submitAnswer =  () => {
      axios.post(
@@ -52,6 +54,20 @@ const Question = (props) => {
         console.log(error);
       });
   };
+  */
+
+  /*
+  const payload = []
+  const submitAnswer = () => {
+    payload.push({
+      "id": id,
+      "correctanswer": answer
+    })
+  }
+  */
+
+
+
 
   return (
     <View style={{ backgroundColor: "white", height: "100%" }}>
@@ -137,7 +153,8 @@ const Question = (props) => {
       <TouchableOpacity
         style={styles.submit}
         onPress={()=>{
-            submitAnswer()
+            props.submitAnswer(id, answer)
+            //submitAnswer()
         }}
       >
         <Text style={styles.submitText}>Submit</Text>
@@ -146,6 +163,7 @@ const Question = (props) => {
         <TouchableOpacity
             style={styles.submit}
             onPress = {props.onPress}
+            //onPress = {() => console.log(payload)}
         >
             <Text style={styles.submitText}>End Quiz</Text>
 

@@ -28,9 +28,6 @@ export default function SignUpScreen({ navigation }) {
       alert(error)
     })
   }
-
-
- 
   return (
 
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>

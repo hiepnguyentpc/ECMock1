@@ -12,20 +12,55 @@ import HeaderQuizMain from "./Header/Header";
 import Question from "./Question/Question";
 
 const QuizMain = ({ navigation }) => {
-  const getBackPressed = () => {
-    console.log("hello");
-  };
-
-  const endQuizPressed = () => {
-    navigation.navigate("Quiz Result", {
-      totalScore: score,
-    });
-    //alert("Your total score: " + score)
-  };
-
   const [accessToken, setAccessToken] = useState("");
   const [question, setQuestion] = useState("");
   const [score, setScore] = useState(0);
+
+  const getBackPressed = () => {
+    console.log("hello");
+  };
+  const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/submit";
+
+  const endQuizPressed = () => {
+    console.log(payload)
+    axios
+      .post(
+        url,
+        payload,
+        { headers: { Authorization: `Bearer ${accessToken}` } }
+      )
+      .then((response) => {
+        /* 
+        alert(response.data[0].result);
+        if (
+          response.data[0].result &&
+          String(response.data[0].result) == "true"
+        ) {
+          setScore((currScore) => currScore + 1);
+        }
+        */
+        //console.log(response.data[0].result)
+        let count = 0
+        for (let i = 0; i < response.data.length; i++){
+          const ans = response.data[i].result
+          if (String(ans) == "true"){
+            count += 1
+            setScore(count);
+          }
+        }
+        if (score != 0){
+          console.log(score)
+          alert(score)
+        }
+        navigation.navigate("Quiz Result", {totalScore: score});
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+
+ 
 
   //console.log(score)
 
@@ -55,6 +90,23 @@ const QuizMain = ({ navigation }) => {
     getQuestionUser();
   }
 
+
+
+
+  var payload = [];
+  const submitAnswer = (question_id, chosen_answer) => {
+    payload.push({
+      id: question_id,
+      correctanswer: chosen_answer,
+    });
+    console.log(payload);
+  };
+
+
+
+
+
+
   return (
     <Tabs.Container
       renderHeader={HeaderQuizMain}
@@ -65,6 +117,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[0]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[0]?.["id"]}
             answer1={question[0]?.["answer1"]}
@@ -80,6 +133,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[1]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[1]?.["id"]}
             answer1={question[1]?.["answer1"]}
@@ -95,6 +149,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[2]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[2]?.["id"]}
             answer1={question[2]?.["answer1"]}
@@ -110,6 +165,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[3]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[3]?.["id"]}
             answer1={question[3]?.["answer1"]}
@@ -125,6 +181,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[4]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[4]?.["id"]}
             answer1={question[4]?.["answer1"]}
@@ -140,6 +197,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[5]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[5]?.["id"]}
             answer1={question[5]?.["answer1"]}
@@ -155,6 +213,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[6]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[6]?.["id"]}
             answer1={question[6]?.["answer1"]}
@@ -170,6 +229,7 @@ const QuizMain = ({ navigation }) => {
           <Question
             question={question[7]?.["question"]}
             onPress={endQuizPressed}
+            submitAnswer={submitAnswer}
             setScore={setScore}
             id={question[7]?.["id"]}
             answer1={question[7]?.["answer1"]}
