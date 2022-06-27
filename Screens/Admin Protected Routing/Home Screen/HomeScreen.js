@@ -39,8 +39,9 @@ const HomeScreen = ({navigation}) => {
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={styles.buttonStyle}>
-            <Text style={styles.buttonText}>Get Users</Text>
+        <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => navigation.navigate("Get User")}>
+            <Text style={styles.buttonText}>Get user data!</Text>
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.buttonStyle}>

@@ -39,10 +39,7 @@ const QuizMain = ({ navigation }) => {
             setScore(count);
           }
         }
-        if (score != 0){
-          console.log(score)
-          alert(score)
-        }
+        
 
         if(score != 0){
           navigation.navigate("Quiz Result", {totalScore: score});
