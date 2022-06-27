@@ -7,6 +7,7 @@ import RegularUserNavigator from "./RegularUserNavigator";
 
 const MainNavigator = () => {
     const {isAdmin} = useRole()
+    //return <AdminNavigator/>
     return isAdmin? <AdminNavigator/> : <RegularUserNavigator/>;
 };
 export default MainNavigator;

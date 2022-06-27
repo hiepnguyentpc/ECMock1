@@ -53,6 +53,9 @@ const QuizMain = ({ navigation }) => {
       });
   };
 
+
+  
+
   const storeAccessToken = async () => {
     try {
       setAccessToken(await AsyncStorage.getItem("accessToken"));
@@ -90,12 +93,6 @@ const QuizMain = ({ navigation }) => {
     });
     console.log(payload);
   };
-
-
-
-
-
-
   return (
     <Tabs.Container
       renderHeader={HeaderQuizMain}
