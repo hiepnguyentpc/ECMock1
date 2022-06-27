@@ -17,6 +17,7 @@ export default function LogInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [response, setResponse] = useState("");
+  const [role, setRole] = useState("");
 
   const onPress = async () => {
     axios
@@ -29,13 +30,18 @@ export default function LogInScreen({ navigation }) {
           "accessToken",
           response.data.tokens.access.token
         );
+
+        AsyncStorage.setItem("userRole", response.data.user.role)
+
         alert("success");
-        navigation.navigate("Home Screen");
+        //navigation.navigate("Home Screen");
       })
       .catch((error) => {
         alert(error);
       });
   };
+
+  //console.log(role)
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>

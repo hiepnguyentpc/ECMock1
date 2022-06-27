@@ -22,7 +22,7 @@ const QuizMain = ({ navigation }) => {
   const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/submit";
 
   const endQuizPressed = () => {
-    console.log(payload)
+    //console.log(payload)
     axios
       .post(
         url,
@@ -30,16 +30,7 @@ const QuizMain = ({ navigation }) => {
         { headers: { Authorization: `Bearer ${accessToken}` } }
       )
       .then((response) => {
-        /* 
-        alert(response.data[0].result);
-        if (
-          response.data[0].result &&
-          String(response.data[0].result) == "true"
-        ) {
-          setScore((currScore) => currScore + 1);
-        }
-        */
-        //console.log(response.data[0].result)
+     
         let count = 0
         for (let i = 0; i < response.data.length; i++){
           const ans = response.data[i].result
@@ -52,17 +43,15 @@ const QuizMain = ({ navigation }) => {
           console.log(score)
           alert(score)
         }
-        navigation.navigate("Quiz Result", {totalScore: score});
+
+        if(score != 0){
+          navigation.navigate("Quiz Result", {totalScore: score});
+        }
       })
       .catch((error) => {
         console.log(error);
       });
   };
-
-
- 
-
-  //console.log(score)
 
   const storeAccessToken = async () => {
     try {
