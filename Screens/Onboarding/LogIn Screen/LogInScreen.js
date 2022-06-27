@@ -12,12 +12,13 @@ import axios from "axios";
 import { useState } from "react";
 import { Keyboard } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRole } from "../../../context/RoleProvider";
 
 export default function LogInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [response, setResponse] = useState("");
-  const [role, setRole] = useState("");
+
+  const {setIsAdmin} = useRole()
 
   const onPress = async () => {
     axios
@@ -30,11 +31,14 @@ export default function LogInScreen({ navigation }) {
           "accessToken",
           response.data.tokens.access.token
         );
-
-        AsyncStorage.setItem("userRole", response.data.user.role)
-
-        alert("success");
-        //navigation.navigate("Home Screen");
+        console.log(response.data.user.role)
+        if(response.data.user.role == "admin"){
+          setIsAdmin(true)
+        }
+        else{
+          navigation.navigate("Home Screen")
+        }
+        alert("success");        
       })
       .catch((error) => {
         alert(error);

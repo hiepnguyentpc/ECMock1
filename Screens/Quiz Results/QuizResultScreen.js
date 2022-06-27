@@ -26,8 +26,6 @@ const QuizResultScreen = ({route, navigation}) => {
           <DetailView buttonPress = {buttonPressed} score={totalScore}/>
         </Tabs.ScrollView>
       </Tabs.Tab>
-
-
     </Tabs.Container>
   )
 }
