@@ -8,7 +8,6 @@ export default function App(){
     <RoleProvider>
       <NavigationContainer>
         <MainNavigator/>
-        
       </NavigationContainer>
     </RoleProvider>
     

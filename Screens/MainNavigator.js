@@ -1,7 +1,7 @@
 import React from "react";
 import { useRole } from "../context/RoleProvider";
-import AdminNavigator from "./AdminNavigator";
-import RegularUserNavigator from "./RegularUserNavigator";
+import AdminNavigator from "./Admin Protected Routing/AdminNavigator";
+import RoleProvider from "../context/RoleProvider";
 
 
 

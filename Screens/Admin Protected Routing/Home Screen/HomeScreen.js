@@ -44,9 +44,7 @@ const HomeScreen = ({navigation}) => {
             <Text style={styles.buttonText}>Get user data!</Text>
         </TouchableOpacity>
         
-        <TouchableOpacity style={styles.buttonStyle}>
-            <Text style={styles.buttonText}>Get Question By ID</Text>
-        </TouchableOpacity>
+        
       </View>
     </LinearGradient>
   );

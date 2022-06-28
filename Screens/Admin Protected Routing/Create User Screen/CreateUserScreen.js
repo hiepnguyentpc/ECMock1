@@ -58,6 +58,7 @@ const getAccessToken = async () => {
     >
     
       <View style={styles.container}>
+      
         <Text style={styles.createAccountText}>Create an account</Text>
 
         <View style={styles.emailTextInput}>
