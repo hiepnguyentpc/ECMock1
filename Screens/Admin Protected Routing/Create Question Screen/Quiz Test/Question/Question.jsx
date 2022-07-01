@@ -8,9 +8,7 @@ import { useState } from "react";
 
 const Question = (props) => {
   const [accessToken, setAccessToken] = useState("")
-  let id = props.id;
-  const [answer, setAnswer] = useState("");
-  const [btncolor, setBtncolor] = useState("")
+
   const [selected1, setSelected1] = useState(false)
   const [selected2, setSelected2] = useState(false)
   const [selected3, setSelected3] = useState(false)

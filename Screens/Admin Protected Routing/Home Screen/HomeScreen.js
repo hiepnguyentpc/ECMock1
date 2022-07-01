@@ -48,6 +48,11 @@ const HomeScreen = ({navigation}) => {
             onPress={() => navigation.navigate("Create Question")}>
             <Text style={styles.buttonText}>Create a new question!</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => navigation.navigate("Delete Question")}>
+            <Text style={styles.buttonText}>Delete a Question!</Text>
+        </TouchableOpacity>
         
         
       </View>
