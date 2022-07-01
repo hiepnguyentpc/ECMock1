@@ -16,7 +16,6 @@ const Question = (props) => {
   const [selected3, setSelected3] = useState(false)
   const [selected4, setSelected4] = useState(false)
 
-  const setScore = props.setScore
   
   
     const storeAccessToken = async () => {

@@ -21,7 +21,7 @@ const Question = (props) => {
   const [answer4, setAnswer4] = useState("")
   const [correctanswer, setCorrectAnswer] = useState("")
 
-  console.log(question, answer1, answer2, answer3, answer4, correctanswer)
+  //console.log(question, answer1, answer2, answer3, answer4, correctanswer)
 
   
     const storeAccessToken = async () => {
@@ -33,19 +33,19 @@ const Question = (props) => {
         };
         storeAccessToken();
    
-  const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/edit";
+  const url = "https://fwa-ec-quiz-mock1.herokuapp.com/v1/questions/edit/" + props.id;
 
   
   
-  const submitAnswer =  () => {
-     axios.post(
+  const updateQuestion =  () => {
+     axios.patch(
         url,
         payload,
         { headers: {"Authorization" : `Bearer ${accessToken}`} }
       )
       .then((response) => {
         console.log(response.data)
-        alert("Question ID" + "\n" + response.data.id + " successfully updated")
+        alert("Question ID" + "\n" + response.data.id + " successfully created")
         
       })
       .catch((error) => {
@@ -61,7 +61,8 @@ const Question = (props) => {
     "answer4": answer4,
     "correctanswer": correctanswer
   }
-  //62be8901c73ae30021f8ea69
+
+  console.log(payload)
   
   
 
@@ -75,7 +76,7 @@ const Question = (props) => {
           alignSelf: "center",
           marginBottom: 40,
         }}
-        placeholder="Đặt câu hỏi ở đây"
+        placeholder= {props.question}
         onChangeText={setQuestion}
       />
       
@@ -92,7 +93,7 @@ const Question = (props) => {
         <View style={styles.circle}>
           <Text style={styles.option}>A</Text>
         </View>
-        <TextInput style={styles.answerText} placeholder="Đáp án thứ nhất" onChangeText={
+        <TextInput style={styles.answerText} placeholder={props.answer1} onChangeText={
          setAnswer1}/>
       </TouchableOpacity>
       <TouchableOpacity
@@ -111,7 +112,7 @@ const Question = (props) => {
         <View style={styles.circle}>
           <Text style={styles.option}>B</Text>
         </View>
-        <TextInput style={styles.answerText} placeholder="Đáp án thứ hai" onChangeText={setAnswer2}/>
+        <TextInput style={styles.answerText} placeholder={props.answer2} onChangeText={setAnswer2}/>
       </TouchableOpacity>
 
       <TouchableOpacity
@@ -129,7 +130,7 @@ const Question = (props) => {
         <View style={styles.circle}>
           <Text style={styles.option}>C</Text>
         </View>
-        <TextInput style={styles.answerText} placeholder="Đáp án thứ ba" onChangeText={setAnswer3}/>
+        <TextInput style={styles.answerText} placeholder={props.answer3} onChangeText={setAnswer3}/>
       </TouchableOpacity>
 
       <TouchableOpacity
@@ -147,16 +148,16 @@ const Question = (props) => {
         <View style={styles.circle}>
           <Text style={styles.option}>D</Text>
         </View>
-        <TextInput style={styles.answerText} placeholder="Đáp án thứ tư" onChangeText={setAnswer4}/>
+        <TextInput style={styles.answerText} placeholder={props.answer4} onChangeText={setAnswer4}/>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.submit}
         onPress={()=>{
-            submitAnswer()
+            updateQuestion()
         }}
       >
-        <Text style={styles.submitText}>Submit</Text>
+        <Text style={styles.submitText}>Update</Text>
       </TouchableOpacity>
 
 
