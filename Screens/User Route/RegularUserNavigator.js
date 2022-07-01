@@ -1,14 +1,15 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import FirstScreen from "./Onboarding/First Screen/FirstScreen";
-import SignUpScreen from "./Onboarding/SignUp Screen/SignUpScreen";
-import LogInScreen from "./Onboarding/LogIn Screen/LogInScreen";
-import HomeScreen from "./User Route/Home Screen/HomeScreen";
-import QuizDetailScreen from "./User Route/Quiz Detail/QuizDetailScreen";
-import QuizMain from "./User Route/Quiz Test/QuizMain";
-import QuizResultScreen from "./User Route/Quiz Results/QuizResultScreen";
-import { useRole } from "../context/RoleProvider";
-import AdminNavigator from "./AdminNavigator";
+
+
+import FirstScreen from "../Onboarding/First Screen/FirstScreen"
+import SignUpScreen from "../Onboarding/SignUp Screen/SignUpScreen"
+import LogInScreen from "../Onboarding/LogIn Screen/LogInScreen"
+import HomeScreen from "./Home Screen/HomeScreen"
+import QuizDetailScreen from "./Quiz Detail/QuizDetailScreen"
+import QuizResultScreen from "./Quiz Results/QuizResultScreen"
+import QuizMain from "./Quiz Test/QuizMain";
+
 
 const Stack = createNativeStackNavigator()
 

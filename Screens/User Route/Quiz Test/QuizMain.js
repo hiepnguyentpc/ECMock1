@@ -40,7 +40,6 @@ const QuizMain = ({ navigation }) => {
           }
         }
         
-
         if(score != 0){
           navigation.navigate("Quiz Result", {totalScore: score});
         }
@@ -50,8 +49,6 @@ const QuizMain = ({ navigation }) => {
       });
   };
 
-
-  
 
   const storeAccessToken = async () => {
     try {

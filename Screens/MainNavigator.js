@@ -1,8 +1,7 @@
 import React from "react";
 import { useRole } from "../context/RoleProvider";
-import AdminNavigator from "./Admin Protected Routing/AdminNavigator";
-import RoleProvider from "../context/RoleProvider";
-
+import AdminNavigator from "./Admin Protected Routing/AdminNavigator"
+import RegularUserNavigator from "./User Route/RegularUserNavigator"
 
 
 const MainNavigator = () => {

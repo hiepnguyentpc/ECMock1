@@ -43,6 +43,11 @@ const HomeScreen = ({navigation}) => {
             onPress={() => navigation.navigate("Get User")}>
             <Text style={styles.buttonText}>Get user data!</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => navigation.navigate("Create Question")}>
+            <Text style={styles.buttonText}>Create a new question!</Text>
+        </TouchableOpacity>
         
         
       </View>
